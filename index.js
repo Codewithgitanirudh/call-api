@@ -14,7 +14,7 @@ const io = socketIo(server, {
 
 const PORT = 4321;
 const userSockets = new Map(); // Store user ID to socket mapping
-
+console.log(userSockets);
 io.on("connection", (socket) => {
   console.log("User connected:", socket.id);
 
